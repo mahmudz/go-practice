@@ -3,7 +3,7 @@ package ds
 type Node struct {
 	prev *Node
 	next *Node
-	key interface{}
+	key  interface{}
 }
 
 type List struct {
@@ -11,7 +11,7 @@ type List struct {
 	tail *Node
 }
 
-func (L *List) Insert(key interface{})    {
+func (L *List) Insert(key interface{}) {
 	list := &Node{
 		next: L.head,
 		key:  key,

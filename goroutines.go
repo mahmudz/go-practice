@@ -25,12 +25,11 @@ func main() {
 				time.Sleep(time.Second)
 				groupCount = 0
 				tempSec = time.Now().Second()
-			}else{
+			} else {
 				groupCount++
 			}
 		}("going")
 	}
-
 
 	time.Sleep(time.Second)
 	fmt.Println("done")
